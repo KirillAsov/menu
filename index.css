@@ -1,0 +1,81 @@
+.container {
+    margin: 0 auto;
+    width: 700px;
+    font-size: 19px;
+}
+.menu_list {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.position {
+    display: flex;
+}
+.position__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.label {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    /* word-break:keep-all; */
+}
+.label::before {
+    content: '';
+    display: block;
+    min-width: 19px;
+    height: 19px;
+    border: 1px solid #010202;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    margin-right: 10px;
+}
+
+.checked-checkbox::before {
+    background-color: rgba(101, 50, 248, 0.5);
+}
+.cost {
+    display: flex;
+    align-items: center;
+}
+.cost::after {
+    margin-left: 5px;
+    content: '$';
+}
+.quantity  {
+    margin-left: 20px;
+    width: 50px;
+}
+
+.total {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+.show_order-btn {
+    margin-top: 10px;
+}
+.orders_list {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.order {
+    display: flex;
+}
+.order__name {
+    width: 150px;
+}
+.orders_list-hiden {
+    visibility: hidden;
+}
+.order__quantity::after {
+    content: 'шт';
+    margin-left: 20px;
+}
